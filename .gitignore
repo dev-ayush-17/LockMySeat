@@ -1,0 +1,11 @@
+backend/config.properties
+backend/bin/
+backend/**/*.class
+node_modules/
+.next/
+dist/
+out/
+.env.local
+.env
+.env.*.local
+

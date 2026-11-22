@@ -1,0 +1,8 @@
+# Database Configuration for LockMySeat (Template)
+# Copy this file to config.properties and fill in your credentials.
+db.url=jdbc:postgresql://localhost:5432/lockmyseat
+db.user=postgres
+db.password=your_postgres_password_here
+
+# Server Configuration
+server.port=8080

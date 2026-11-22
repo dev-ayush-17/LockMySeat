@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-paper: #F4EFE6;
+    --bg-warm: #EBE4D5;
+    --ink-black: #121212;
+    --bauhaus-red: #D9381E;
+    --bauhaus-blue: #1B449C;
+    --bauhaus-yellow: #E5A93C;
+    --border-dark: #1E1E1E;
+  }
+
+  body {
+    background-color: var(--bg-paper);
+    color: var(--ink-black);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    background-image: radial-gradient(#d3cbbe 0.75px, transparent 0.75px);
+    background-size: 16px 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Neo-Brutalist & Bauhaus Utility Shadows */
+.brutal-border {
+  border: 2px solid var(--border-dark);
+}
+
+.brutal-border-thick {
+  border: 3px solid var(--border-dark);
+}
+
+.brutal-shadow-sm {
+  box-shadow: 2px 2px 0px var(--border-dark);
+}
+
+.brutal-shadow {
+  box-shadow: 4px 4px 0px var(--border-dark);
+}
+
+.brutal-shadow-lg {
+  box-shadow: 6px 6px 0px var(--border-dark);
+}
+
+.brutal-btn {
+  border: 2px solid var(--border-dark);
+  box-shadow: 3px 3px 0px var(--border-dark);
+  transition: all 0.1s ease-in-out;
+}
+
+.brutal-btn:hover:not(:disabled) {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px var(--border-dark);
+}
+
+.brutal-btn:active:not(:disabled) {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px var(--border-dark);
+}
